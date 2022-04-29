@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Face</title>
+    <style>
+        body{
+            background-color: #3e5b8f78;
+        }
+        .face{
+            width: 250px;
+            margin: 100px auto;
+            
+        }
+        .head{
+            width: 217px;
+            height: 251px;
+            background-color: #eebb99;
+            z-index: 2;
+            position: relative;
+        }
+        .glasses {
+            width: 217px;
+            height: 55px;
+            background-color: #fbd0b38a;
+            position: relative;
+            top: -229px;
+            right: 0px;
+            z-index: 5;
+        }
+        .left-eye{
+            width: 15px;
+            height: 15px;
+            background-color: rgb(15 15 16);
+            border-radius: 50%;
+            position: relative;
+            top: -267px;
+            right: -43px;
+            z-index: 3;
+        }
+        .right-eye{
+            width: 15px;
+            height: 15px;
+            background-color: rgb(15 15 16);
+            border-radius: 50%;
+            position: relative;
+            top: -282px;
+            right: -150px;
+            z-index: 3;
+        }       
+        .nose {
+            width: 40px;
+            height: 37px;
+            background-color: #eebb99;
+            border-radius: 50%;
+            position: relative;
+            top: -284px;
+            right: -87px;
+            z-index: 8;
+        }
+        .mustache {
+            width: 113px;
+            height: 113px;
+            background-color: rgb(15 15 16);
+            border-radius: 50%;
+            position: relative;
+            top: -299px;
+            right: -50px;
+            z-index: 4;
+        }
+        .mouth {
+            width: 45px;
+            height: 45px;
+            background-color: #fdfdfd;
+            border-radius: 50%;
+            position: relative;
+            top: -404px;
+            right: -84px;
+            z-index: 6;
+        }
+        .mouth-2 {
+            z-index: 7;
+            width: 51px;
+            height: 21px;
+            background-color: rgb(15 15 16);
+            position: relative;
+            top: -446px;
+            right: -82px;
+        }
+        .T-shirt-1 {
+            width: 217px;
+            height: 30px;
+            z-index: 9;
+            position: relative;
+            top: -358px;
+            right: 0px;
+            background-color: rgb(226, 226, 226);
+        }
+        .T-shirt-2 {
+            width: 249px;
+            height: 30px;
+            z-index: 9;
+            position: relative;
+            top: -360px;
+            right: 15px;
+            background-color: rgb(237 235 235);
+        }
+        .ghutra {
+            width: 273px;
+            height: 198px;
+            background-color: #fdfdfd;
+            z-index: 1;
+            position: relative;
+            top: -637px;
+            right: 28px;
+        }
+        .ghutra-2 {
+            width: 297px;
+            height: 50px;
+            background-color: #fdfdfd;
+            border-radius: 50%;
+            z-index: 1;
+            position: relative;
+            top: -861px;
+            right: 34px;
+        }
+        .agal {
+            width: 305px;
+            height: 18px;
+            background-color: #1b1b1b;
+            border-radius: 50%;
+            border-top-left-radius: 10px 10px;
+            border-top-right-radius: 10px 10px;
+            z-index: 11;
+            position: relative;
+            top: -895px;
+            right: 39px;
+        }
+        
+        .agal-2 {
+            width: 310px;
+            height: 18px;
+            background-color: #222222;
+            border-radius: 50%;
+            border-top-left-radius: 10px 10px;
+            border-top-right-radius: 10px 10px;
+            z-index: 11;
+            position: relative;
+            top: -902px;
+            right: 40px;
+        }
+        /* A-L--> details of ghutra */
+         .details-of-ghutra-A{
+            position: relative;
+            top: -738px;
+            right: 14px;
+            z-index: 13;
+            width: 0;
+            height: 0;
+            background-color: transparent;
+            margin-top: 1px;
+            border-style: solid;
+            border-width: 7px;
+            border-color: transparent #e93333 transparent #e93333;
+        }
+        .details-of-ghutra-B{
+            position: relative;
+            top: -753px;
+            right: 28px;
+            z-index: 13;
+            width: 0;
+            height: 0;
+            background-color: transparent;
+            margin-top: 1px;
+            border-style: solid;
+            border-width: 7px;
+            border-color: transparent #e93333 transparent #e93333;
+        }
+        .details-of-ghutra-C{
+            position: relative;
+            top: -780px;
+            right: 14px;
+            z-index: 13;
+            width: 0;
+            height: 0;
+            background-color: transparent;
+            margin-top: 1px;
+            border-style: solid;
+            border-width: 7px;
+            border-color: transparent #e93333 transparent #e93333;
+        }
+         .details-of-ghutra-D{
+            position: relative;
+            top: -795px;
+            right: 28px;
+            z-index: 13;
+            width: 0;
+            height: 0;
+            background-color: transparent;
+            margin-top: 1px;
+            border-style: solid;
+            border-width: 7px;
+            border-color: transparent #e93333 transparent #e93333;
+        }
+        .details-of-ghutra-E{
+            position: relative;
+            top: -824px;
+            right: 14px;
+            z-index: 13;
+            width: 0;
+            height: 0;
+            background-color: transparent;
+            margin-top: 1px;
+            border-style: solid;
+            border-width: 7px;
+            border-color: transparent #e93333 transparent #e93333;
+        }
+        
+
+        .details-of-ghutra-F{
+            position: relative;
+            top: -839px;
+            right: 28px;
+            z-index: 13;
+            width: 0;
+            height: 0;
+            background-color: transparent;
+            margin-top: 1px;
+            border-style: solid;
+            border-width: 7px;
+            border-color: transparent #e93333 transparent #e93333;
+        }
+        .details-of-ghutra-G{
+            position: relative;
+            top: -739px;
+            right: 14px;
+            z-index: 13;
+            width: 0;
+            height: 0;
+            background-color: transparent;
+            margin-top: 1px;
+            border-style: solid;
+            border-width: 7px;
+            border-color: transparent #e93333 transparent #e93333;
+        }
+        .details-of-ghutra-H{
+            position: relative;
+            top: -754px;
+            right: 28px;
+            z-index: 13;
+            width: 0;
+            height: 0;
+            background-color: transparent;
+            margin-top: 1px;
+            border-style: solid;
+            border-width: 7px;
+            border-color: transparent #e93333 transparent #e93333;
+        }
+        .details-of-ghutra-I{
+            position: relative;
+            top: -780px;
+            right: 14px;
+            z-index: 13;
+            width: 0;
+            height: 0;
+            background-color: transparent;
+            margin-top: 1px;
+            border-style: solid;
+            border-width: 7px;
+            border-color: transparent #e93333 transparent #e93333;
+        }
+         .details-of-ghutra-J{
+            position: relative;
+            top: -795px;
+            right: 28px;
+            z-index: 13;
+            width: 0;
+            height: 0;
+            background-color: transparent;
+            margin-top: 1px;
+            border-style: solid;
+            border-width: 7px;
+            border-color: transparent #e93333 transparent #e93333;
+        }
+        .details-of-ghutra-K{
+            position: relative;
+            top: -824px;
+            right: 14px;
+            z-index: 13;
+            width: 0;
+            height: 0;
+            background-color: transparent;
+            margin-top: 1px;
+            border-style: solid;
+            border-width: 7px;
+            border-color: transparent #e93333 transparent #e93333;
+        }
+        .details-of-ghutra-L{
+            position: relative;
+            top: -839px;
+            right: 28px;
+            z-index: 13;
+            width: 0;
+            height: 0;
+            background-color: transparent;
+            margin-top: 1px;
+            border-style: solid;
+            border-width: 7px;
+            border-color: transparent #e93333 transparent #e93333;
+        }
+        .details-2   {
+            position: relative;
+            top: -89px;
+            right: -245px;
+        }                                 
+    </style>
+</head>
+<body>
+    <div class="face">
+        <div class="head"></div>
+        <div class="glasses"></div>
+        <div class="left-eye"></div>
+        <div class="right-eye"></div>
+        <div class="nose"></div>
+        <div class="mustache"></div>
+        <div class="mouth"></div>
+        <div class="mouth-2"></div>
+        <div class="T-shirt-1"></div>
+        <div class="T-shirt-2"></div>
+        <div class="ghutra"></div>
+        <div class="ghutra-2"></div>
+        <div class="agal"></div>
+        <div class="agal-2"></div>
+        <div class="details-of-ghutra-A"></div>
+        <div class="details-of-ghutra-B"></div>
+        <div class="details-of-ghutra-C"></div>
+        <div class="details-of-ghutra-D"></div>
+        <div class="details-of-ghutra-E"></div>
+        <div class="details-of-ghutra-F"></div>
+        <div class="details-2">
+            <div class="details-of-ghutra-G"></div>
+            <div class="details-of-ghutra-H"></div>
+            <div class="details-of-ghutra-I"></div>
+            <div class="details-of-ghutra-J"></div>
+            <div class="details-of-ghutra-K"></div>
+            <div class="details-of-ghutra-L"></div>
+        </div>
+    </div>
+</body>
+</html>
